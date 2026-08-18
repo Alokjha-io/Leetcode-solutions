@@ -1,22 +1,22 @@
 class Solution {
 public:
     int numberOfSteps(int num) {
-        int step = 0;
+        int steps = 0;
         while(num>0)
         {
             if (num%2==0)
             {
                 num = num/2;
-                step++;
+                steps++;
             }
             else
             {
                 num = num-1;
-                step++;
+                steps++;
             }
             
         }
         
-    return step;  
+    return steps;  
     }
 };
